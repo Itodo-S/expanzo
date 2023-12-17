@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+body {
+  margin: 0;
+}
+
+/* NAVBAR STYLE STARTS */
+
+.header {
+  @apply flex items-center bg-[#129476] h-12 px-5;
+}
+
+/* 00c39a */
+/* 0fc09b */
+
+.nav-container {
+  @apply flex justify-between items-center w-full;
+}
+
+.nav-left {
+  @apply flex gap-10 items-center;
+}
+
+.nav-ul {
+  @apply flex gap-10 text-white font-semibold uppercase;
+}
+
+.ul-item {
+  @apply hover:text-[#0fc09b] hover:border-b-2 hover:border-[#0fc09b];
+}
+
+.nav-right {
+  @apply flex gap-10 items-center;
+}
+
+.nav-icon {
+  @apply flex items-center justify-center w-6 h-6 rounded-full bg-[#00c39a] text-[12px];
+}
+
+.li-right {
+  @apply flex gap-3 cursor-pointer;
+}
+
+.li-right p {
+  @apply text-[#00c39a];
+}
+
+/* HOME STYLE STARTS */
+.home {
+  @apply flex flex-col items-center;
+}
+
+.home-logo {
+  @apply mt-10;
+}
+
+.home-tabs {
+  @apply flex justify-center items-center gap-5 mt-14 mb-28;
+}
+
+.tab {
+  @apply capitalize w-28 flex items-center justify-center hover:border-b-2 hover:border-[#0fc09b] hover:text-[#0fc09b] transition-all duration-100 font-bold cursor-pointer;
+}
+
+.active-tab {
+  @apply capitalize w-28 flex items-center justify-center border-b-2 border-[#0fc09b] text-[#0fc09b] font-bold cursor-pointer;
+}
+
+/* CONTACT STYLE STARTS */
+.contact {
+  @apply flex flex-col items-center mb-24;
+}
+
+.cantact-title {
+  @apply font-bold mt-12;
+}
+
+/* FOOTER STYLE STARTS */
+.footer {
+  @apply flex bg-[#f8f8f8] h-64;
+}
+
+.footer-left {
+  @apply w-2/5  flex justify-center items-center;
+}
+
+.footer-right {
+  @apply flex-1  flex items-center gap-10 px-8 font-bold uppercase;
+}
+
+.footer-right p {
+  @apply hover:scale-105 cursor-pointer transition-all duration-300;
+}
